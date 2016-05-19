@@ -9,17 +9,22 @@ using Xamarin.Forms;
 
 namespace WorkingWithPopups.iOS
 {
-	[Register ("AppDelegate")]
-	public partial class AppDelegate : 
+	[Register("AppDelegate")]
+	public partial class AppDelegate :
 	global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate // superclass new in 1.3
 	{
-		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
+		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
-			global::Xamarin.Forms.Forms.Init ();
+			global::Xamarin.Forms.Forms.Init();
 
-			LoadApplication (new App ());  // method is new in 1.3
+			LoadApplication(new App());  // method is new in 1.3
 
-			return base.FinishedLaunching (app, options);
+
+#if ENABLE_TEST_CLOUD
+			Xamarin.Calabash.Start();
+#endif
+
+			return base.FinishedLaunching(app, options);
 		}
 	}
 }

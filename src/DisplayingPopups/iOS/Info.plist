@@ -36,5 +36,7 @@
 	</array>
 	<key>CFBundleName</key>
 	<string>WorkingWithPopups.iOS</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.allegient.labs.springfling</string>
 </dict>
 </plist>
