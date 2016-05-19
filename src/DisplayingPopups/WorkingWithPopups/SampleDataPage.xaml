@@ -10,17 +10,17 @@
     </p:ListDataPage.DataSource>
 
       <!-- CUSTOM LISTITEM -->
-  <p:ListDataPage.DefaultItemTemplate>
-    <DataTemplate>
-      <ViewCell>
-        <p:ListItemControl
-            Title="{p:DataSourceBinding title}"
-            Detail="{p:DataSourceBinding room}"
-            ImageSource="{p:DataSourceBinding image}"
-            DataSource="{Binding Value}"
-            HeightRequest="90">
-        </p:ListItemControl>
-      </ViewCell>
-    </DataTemplate>
-  </p:ListDataPage.DefaultItemTemplate>
+	  <!--<p:ListDataPage.DefaultItemTemplate>
+	    <DataTemplate>
+	      <ViewCell>
+	        <p:ListItemControl
+	            Title="{p:DataSourceBinding title}"
+	            Detail="{p:DataSourceBinding room}"
+	            ImageSource="{p:DataSourceBinding image}"
+	            DataSource="{Binding Value}"
+	            HeightRequest="90">
+	        </p:ListItemControl>
+	      </ViewCell>
+	    </DataTemplate>
+	  </p:ListDataPage.DefaultItemTemplate>-->
 </p:ListDataPage>
