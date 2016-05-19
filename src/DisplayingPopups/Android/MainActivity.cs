@@ -14,18 +14,18 @@ using Xamarin.Forms.Platform.Android;
 namespace WorkingWithPopups.Android
 {
 
-	[Activity (Label = "WorkingWithPopups.Android.Android", Icon = "@drawable/icon", MainLauncher = true, 
+	[Activity(Label = "WorkingWithPopups.Android.Android", Icon = "@drawable/ic_launcher", MainLauncher = true,
 		ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-	public class MainActivity : 
+	public class MainActivity :
 	global::Xamarin.Forms.Platform.Android.FormsApplicationActivity // superclass new in 1.3
 	{
-		protected override void OnCreate (Bundle bundle)
+		protected override void OnCreate(Bundle bundle)
 		{
-			base.OnCreate (bundle);
+			base.OnCreate(bundle);
 
-			global::Xamarin.Forms.Forms.Init (this, bundle);
+			global::Xamarin.Forms.Forms.Init(this, bundle);
 
-			LoadApplication (new App ()); // method is new in 1.3
+			LoadApplication(new App()); // method is new in 1.3
 		}
 	}
 
