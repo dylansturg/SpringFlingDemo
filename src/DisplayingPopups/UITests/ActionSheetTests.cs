@@ -41,16 +41,18 @@ namespace UITests
 		[Test]
 		public void ActionSheetPage_ActionSheet_With_Delete()
 		{
+			app.Repl();
+
 			app.Tap(x => x.Marked("ActionSheets"));
-			app.Screenshot("Tapped on view with class: UITabBarSwappableImageView");
+			app.Screenshot("Opened Action Sheet Tab");
 			app.Tap(x => x.Marked("ActionSheet Cancel/Delete"));
-			app.Screenshot("Tapped on view with class: UIButtonLabel marked: ActionSheet Cancel/Delete");
+			app.Screenshot("Opened Action Sheet with Delete");
 
 			app.WaitForElement("Delete");
 			app.WaitForElement("Email");
 
 			app.Tap(x => x.Marked("Photo Roll"));
-			app.Screenshot("Tapped on view with class: _UIAlertControllerActionView marked: Photo Roll");
+			app.Screenshot("Closed Action Sheet");
 		}
 	}
 }
