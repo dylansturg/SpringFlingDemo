@@ -38,6 +38,8 @@
   <ItemGroup>
     <Compile Include="AppInitializer.cs" />
     <Compile Include="ActionSheetTests.cs" />
+    <Compile Include="AlertTests.cs" />
+    <Compile Include="DataPageTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
