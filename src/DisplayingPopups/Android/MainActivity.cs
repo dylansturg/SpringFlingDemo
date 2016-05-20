@@ -7,9 +7,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Graphics;
+using Android.Graphics.Drawables;
 
 using Xamarin.Forms.Platform.Android;
-
 
 namespace WorkingWithPopups.Android
 {
@@ -27,9 +28,12 @@ namespace WorkingWithPopups.Android
 
 			LoadApplication(new App()); // method is new in 1.3
 
-			var x = typeof(Xamarin.Forms.Themes.DarkThemeResources);
-			x = typeof(Xamarin.Forms.Themes.LightThemeResources);
-			x = typeof(Xamarin.Forms.Themes.Android.UnderlineEffect);
+			if (ActionBar != null)
+			{
+				var clearIcon = new ColorDrawable();
+				clearIcon.Color = Color.Transparent;
+				ActionBar.SetIcon(clearIcon);
+			}
 		}
 	}
 

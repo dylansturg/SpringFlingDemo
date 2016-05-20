@@ -41,8 +41,6 @@ namespace UITests
 		[Test]
 		public void ActionSheetPage_ActionSheet_With_Delete()
 		{
-			app.Repl();
-
 			app.Tap(x => x.Marked("ActionSheets"));
 			app.Screenshot("Opened Action Sheet Tab");
 			app.Tap(x => x.Marked("ActionSheet Cancel/Delete"));
